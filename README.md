@@ -1,5 +1,3 @@
-```markdown
-
 ![Banner](assets/banner.png)
 
 ![Static Badge](https://img.shields.io/badge/version-v0.0.1-green)
@@ -8,84 +6,36 @@
 
 # QuokkaDB 👨‍💻
 
-> Um banco de dados leve, rápido e 100% baseado em arquivos JSON. Ideal para apps pequenos, protótipos, ferramentas offline e projetos educacionais.
+> A lightweight, fast, and 100% JSON-based database. Perfect for small apps, prototypes, offline tools, and educational projects.
 
 ---
 
-## 🚀 Visão Geral
+## 🚀 Overview
 
-O **QuokkaDB** é um banco de dados minimalista e multiplataforma feito para funcionar com zero configuração. Ele lê e escreve diretamente em arquivos `.json`, oferecendo uma API simples e intuitiva para gerenciar dados estruturados.
+**QuokkaDB** is a minimalist, cross-platform database designed to work with zero configuration. It reads and writes directly to `.json` files, offering a simple and intuitive API for managing structured data.
 
 ---
 
 ## 🧠 Features
 
-- 📦 Armazenamento baseado em JSON
-- ⚡️ Leve e rápido
-- 🔌 Zero dependências externas
-- 🧰 API simples para leitura, escrita e consulta
-- 🧪 Ideal para testes, mock data e protótipos
-- 🏁 Pronto para ser usado com Node.js, Electron, React Native e mais
+- 📦 JSON-based storage  
+- ⚡️ Lightweight and fast  
+- 🔌 Zero external dependencies  
+- 🧰 Simple API for reading, writing, and querying  
+- 🧪 Ideal for testing, mock data, and prototypes  
+- 🏁 Ready to use with Node.js, Electron, React Native, and more  
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📂 Project Structure
 
 ```quokkadb/
 ├── src/
-│ ├── index.ts # Ponto de entrada
-│ ├── quokka.ts # Lógica principal do DB
-│ └── types.ts # Tipos e interfaces
-├── data/ # Onde os arquivos JSON são salvos
-├── assets/ # Imagens e banners
+│ ├── index.ts # Entry point
+│ ├── quokka.ts # Core database logic
+│ └── types.ts # Types and interfaces
+├── data/ # Where JSON files are saved
+├── assets/ # Images and banners
 ├── README.md
 ├── tsconfig.json
 └── package.json
-```
-
-
----
-
-## 🛠️ Como usar
-
-### Instalação
-
-Use algum gerenciador de pacotes para instalar o QuokkaDB
-
-## npm:
-```bash
-npm install quokkadb
-```
-
-## pnpm:
-
-```bash
-pnpm install quokkadb
-```
-
-## yarn:
-
-```bash
-yarn add quokkadb
-```
-
-## Exemplo de uso
-
-```javascript
-import QuokkaDB from 'quokkadb';
-
-const users = new QuokkaDB("users");
-
-const userTable = {
-    name: "Lukas",
-    age: 13,
-    id: 4
-}
-
-users.init();
-users.createElement(userTable);
-users.saveState();
-```
-
-# FAQs
-```
